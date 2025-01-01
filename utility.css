@@ -1,0 +1,24 @@
+.flex{
+    display: flex;
+}
+.gap{
+    gap: 5px;
+}
+.just-center{
+    justify-content: center;
+}
+.item-center{
+    align-items: center;
+}
+.border{
+    border: 2px solid rebeccapurple;
+}
+.invert{
+    filter: invert(1);
+}
+.bg-dark-lib{
+    background-color: rgb(18,18,18);
+}
+.p-1{
+    padding: 10px;
+}
