@@ -45,8 +45,12 @@ body {
     align-items: center;
     font-weight: bolder;
     gap: 10px;
+    cursor: pointer;
 }
 
+.search img{
+    cursor: pointer;
+}
 .logsign {
     font-family: 'Segoe UI';
     gap: 15px;
