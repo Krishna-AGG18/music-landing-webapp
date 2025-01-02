@@ -12,10 +12,11 @@
 <body>
     <div class="navbar">
         <div class="logo">
-            <img class="invert" src="/SVG-S/logo.svg" alt="spotify"> SPOTIFY
+            <img class="invert" src="/SVG-S/logo.svg" alt="spotify"> MUSIC-LANDING-PAGE
         </div>
         <div class="search flex item-center">
             <img class="invert" src="/SVG-S/home.svg" alt="home" width="30px">
+            <input type="text" id="search">
             <img class="invert" src="/SVG-S/search.svg" alt="search" width="25px">
         </div>
         <div class="logsign flex item-center just-center">
@@ -27,98 +28,23 @@
             </span>
         </div>
     </div>
-    <div class="container flex">
-        <div class="left bg-dark-lib">
-            <div class="library bg-dark-lib">
-                <div class="heading flex gap item-center">
-                    <img class="invert" src="/SVG-S/playlist.svg" alt="playlist" width="25px">
-                    <h4>Your Library</h4>
-                </div>
-                <div class="footer">
-                    <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
-                    <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety & Privacy Center</span></a></div>
-                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
-                    </div>
-                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
-                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
-                    </div>
-                    <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
-                </div>
-                <div class="bottom">
-                    <div>
-                        <h5><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></h5>
-                    </div>
-                    <div>
-                        <button class="invert flex item-center" id="globe" value="English">
-                            <img src="/SVG-S/globe.svg" alt="globe" width="15px"> &nbsp;&nbsp;English
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="right bg-dark-lib">
-            <div class="container-song-album">
-                <div class="popular-container">
-                    <div class="popular">
-                        <div>
-                            <h3>Popular artists</h3>
-                        </div>
-                        <div>
-                            <button id="showall">Show all</button>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="card">
-                            <div class="play">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="black">
-                                    <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="black" stroke-width="1.5" stroke-linejoin="round" />
-                                </svg>
-                            </div>
-                            
-                            <div class="image">
-                                <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt="pritam" width="120px">
-                            </div>
-                            <h4>Pritam</h4>
-                            <p>Artist</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="popular-album-container">
-                    <div class="popular-album">
-                        <div>
-                            <h3>Popular albums and singles</h3>
-                        </div>
-                        <div>
-                            <button id="showall">Show all</button>
-                        </div>
-                    </div>
-                    <div class="cards2">
-                        <div class="card2">
-                            <div class="play">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="black">
-                                    <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="black" stroke-width="1.5" stroke-linejoin="round" />
-                                </svg>
-                            </div>
-                            <div class="image2">
-                                <img src="https://i.scdn.co/image/ab67616d00001e0209c9bf421422262c368009d6  " alt="pritam">
-                            </div>
-                            <div class="text-album">
-                                <p id="song-name">Patandar</p>
-                                <p id="artist-name">Arjan Dhillon, Mxrci</p>
-                            </div>
-                        </div>              
-                    </div>
-                </div>
-            </div>
-            <div class="playbar">
-                <div class="song-btns">
-                    <img src="/SVG-S/back.svg" alt="back">
-                    <img src="/SVG-S/play.svg" alt="playbtn">
-                    <img src="/SVG-S/nextbtn.svg" alt="forward">
-                </div>
-            </div>
+   <div class="container">
+    <div class="left">
+        <div class="lib-container">
+
         </div>
     </div>
+    <div class="right">
+        <div class="content">
+
+        </div>
+    </div>
+   </div>
+   <div class="playlist">
+    <div class="playbar">
+        <img src="/SVG-S/nextbtn.svg" alt="">
+    </div>
+   </div>
     <script src="script.js"></script>
 </body>
 
