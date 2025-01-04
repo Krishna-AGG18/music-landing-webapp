@@ -21,7 +21,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #323232   ;
+    background-color: #323232;
     width: 20px;
 }
 
@@ -30,7 +30,8 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #777; /* Lighter color on hover */
+    background: #777;
+    /* Lighter color on hover */
 }
 
 .navbar {
@@ -48,9 +49,10 @@ body {
     cursor: pointer;
 }
 
-.search img{
+.search img {
     cursor: pointer;
 }
+
 .logsign {
     font-family: 'Segoe UI';
     gap: 15px;
@@ -58,7 +60,7 @@ body {
     font-style: normal;
 }
 
-#signup-btn{
+#signup-btn {
     padding: 12px 20px;
     background-color: black;
     color: gray;
@@ -68,7 +70,8 @@ body {
     cursor: pointer;
     font-style: normal;
 }
-#signup-btn:hover{
+
+#signup-btn:hover {
     color: white;
     transform: scale(1.1);
     font-weight: 900;
@@ -83,15 +86,18 @@ body {
     font-weight: 700;
     font-style: normal;
 }
-#login:hover{
+
+#login:hover {
     transform: scale(1.1);
     font-weight: 900;
 }
-.search{
+
+.search {
     gap: 5px;
     justify-content: center;
 }
-#search{
+
+#search {
     border-radius: 20px;
     border: none;
     background: transparent;
@@ -99,7 +105,8 @@ body {
     width: 60vmin;
     padding: .5rem 1rem;
 }
-.container{
+
+.container {
     width: 100vw;
     display: flex;
     /* justify-content: center; */
@@ -107,43 +114,47 @@ body {
     gap: 10px;
     padding: .5rem .5rem;
 }
-.left{
+
+.left {
     width: 17vw;
     box-sizing: border-box;
     /* border: 2px solid white; */
-    padding: .5rem 1rem ;
+    padding: .5rem 1rem;
     border-radius: 6px;
     overflow: auto;
     height: 73vh;
     background-color: #0c0c0c;
 }
-.head{
+
+.head {
     display: flex;
     align-items: center;
-    gap:.5rem;
+    gap: .5rem;
     font-weight: 700;
 }
-.head img{
+
+.head img {
     width: 1.5rem;
 }
-.right{
-    width:81vw;
+
+.right {
+    width: 81vw;
     background-color: #0c0c0c;
     /* border: 2px solid white; */
     border-radius: 6px;
     box-sizing: border-box;
-    padding: .5rem 1rem ;
+    padding: .5rem 1rem;
     overflow: auto;
     min-height: 73vh;
 }
 
 /*css for playbar*/
-.playlist{
+.playlist {
     width: 100vw;
-    background-color: #01181b;
+    background-color: #000;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding: .5rem;
     /* gap: .8rem; */
@@ -151,36 +162,61 @@ body {
     bottom: 0;
     box-sizing: border-box;
 }
-.playbar{
+
+.playbar {
     display: flex;
     width: 90%;
-    padding: .5rem;
+    /* padding: .5rem; */
     /* justify-content: space-between; */
     justify-content: space-around;
 }
-.name,.volume-time{
+
+.name,
+.volume-time {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.back,.play,.next{
+
+.back,
+.play,
+.next {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.buttons{
+
+.buttons {
     display: flex;
     gap: .8rem;
 }
-.buttons img{
+
+.buttons img {
     width: 2.5rem;
-    cursor: pointer; 
-    padding: .3rem;   
+    cursor: pointer;
+    padding: .3rem;
 }
-.buttons img:hover{
+
+.buttons img:hover {
     border-radius: 50%;
     background-color: #ffffff14;
 }
-.seekbar{
-    
+
+.seekbar {
+    width:90%;
+    background-color: wheat;
+    position: relative;
+    height: 2px;
+    z-index: 100;
+    margin:10px 0px 5px 0px;
+}
+
+.circle{
+    width: 12px;
+    position: absolute;
+    height: 12px;
+    background-color: wheat;
+    border-radius: 15px;
+    bottom: -6px;
+    transition: left .5s ease-out;
 }
