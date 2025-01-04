@@ -1,9 +1,18 @@
-async function main() {
-    let songLink = "";
-    let apiUrl = `https://api.spotify.com/v1/albums/4aawyAB9vmqN3uQ7FjRGTy`;
-
-    let response = await fetch(apiUrl);
-    let data = await response.json();
-    console.log(data);
+// Code for fetching details..........
+async function fetchTracks(clientId, searchTerm) {
+    const response = await fetch(`https://api.jamendo.com/v3.0/tracks?client_id=${clientId}&format=json&limit=10&search=${encodeURIComponent(searchTerm)}`);
+    const data = await response.json();
+    return data.results; // Returns an array of tracks
 }
-main();
+
+(async () => {
+    const clientId = '2dbd26d8'; 
+    const searchTerm = 'badshah'; 
+
+    const tracks = await fetchTracks(clientId, searchTerm);
+    console.log(tracks)
+    // tracks.forEach((track, index) => {
+    //     console.log(`${index + 1}. ${track.name} by ${track.artist_name}`);
+    //     console.log(`Play URL: ${track.audio}`);
+    // });
+})();
